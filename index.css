@@ -1,0 +1,387 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color:#FFF0F5;
+}
+
+body{
+  overflow-y:auto;
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 0px;
+  line-height:50px;
+}
+
+header .left-side a img{
+  width: 50px;
+  padding-top:10px;
+}
+/*phần menu*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: green;
+    display: flex;
+
+}
+li{
+    
+    width: 150px;
+    text-align: center; 
+}
+.menu a{
+    text-decoration: none;
+    color: green;
+    font-family: 'Viga', serif;
+    font-size: medium;
+}
+.menu > ul{
+    height: 50px;
+}
+.menu > ul > li{
+    display: inline-block;
+    border-right: 1px solid #dddddd;
+    position: relative;
+}
+.menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+.menu > ul > li > ul li{
+    padding: 2px;
+    border-bottom: 1px solid #dddddd;
+}
+ul li:last-child{
+    border: none;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+
+/*phần content*/
+.container{
+  max-width: 100%;
+  margin: 30px auto;
+  line-height:1.3;
+}
+.container .left-side{
+  text-align: center;
+}
+
+.container .left-side h1{
+  font-family: Impact, fantasy;
+}
+
+.container .left-side h1 .green{
+  color: green;
+  font-family: 'Viga', serif;
+}
+
+.container .left-side h2, p{
+  font-family: Candara;
+}
+
+.container .left-side a{
+  display: inline-block;
+  background: green;
+  padding: 20px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: white;
+  margin-top: 10px;
+  font-size: 5px;
+  font-family: Candara;
+}
+
+.container .right-side{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container .right-side img{
+  max-width: 40%;
+}
+
+.container .right-side .box{
+  position:relative;
+  display:inline-block;
+  top: 50%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.container .right-side .box img{
+  width: 25px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container .right-side .box img.facebook{
+  width: 18.5px;
+}
+/*phần biểu tượng ly coffe cuối bài*/
+.thumb{
+  display: flex;
+  margin-bottom: -300px;
+  justify-content: bottom;
+  clear: both;
+}
+
+.thumb a:hover{
+  margin-top: -15px;
+  transition: 0.2s;
+}
+
+.thumb img{
+  bottom:-3px;
+  width: 30px;
+  
+}
+
+@media (min-width: 1140px){
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  header .left-side a img{
+    width: 80px;
+  }
+
+  header .right-side{
+    display: flex;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .container{
+    max-width: 90%;
+    margin: 50px auto;
+    display: flex;
+  }
+
+  .container .left-side{
+    text-align: left;
+    flex: 1;
+  }
+
+  .container .left-side h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+
+  .container .left-side h1 .green{
+    color: green;
+    font-family: 'Viga', serif;
+  }
+
+  .container .left-side p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .container .left-side a{
+    display: inline-block;
+    background: green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .container .right-side{
+    flex: 1;
+    text-align: center;
+  }
+
+  .container .right-side img{
+    width: 330px;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
+
+  .container .right-side .box{
+    display: grid;
+    position: absolute;
+    bottom: 40%;
+    right: 1%;
+  }
+
+  .container .right-side .box img{
+    width: 25px;
+    margin: 10px;
+  }
+
+  .container .right-side .box img.facebook{
+    width: 18.5px;
+  }
+
+  .thumb{
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    padding-bottom:10px;
+  }
+
+  .thumb a:hover{
+    margin-top: -15px;
+    transition: 0.2s;
+  }
+
+  .thumb img{
+    width: 54px;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  header{
+    display: block;
+  }
+
+  header .left-side a img{
+    width: 80px;
+    margin: auto;
+    display: block;
+  }
+
+  header .right-side{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .container{
+    max-width: 80%;
+    margin: 50px auto;
+  }
+
+  .container .left-side{
+    text-align: center;
+  }
+
+  .container .left-side h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  .container .left-side h1 .green{
+    color: green;
+    font-family: 'Viga', serif;
+  }
+
+  .container .left-side p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .container .left-side a{
+    display: inline-block;
+    background: green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    font-size: 16.2px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 404px){
+  header{
+    display: block;
+  }
+
+  header .left-side a img{
+    width: 80px;
+    margin: auto;
+    display: block;
+  }
+
+  header .right-side{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  header .right-side .nav-link-wrapper a{
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .container .right-side img{
+    width: 330px;
+    margin-top: -30px;
+  }
+  .container .right-side img{
+    max-width: 50%;
+  }
+
+  .container .right-side .box{
+    display: none;
+    position: absolute;
+    bottom: 250px;
+    right: 25px;
+  }
+
+  .container .right-side .box img{
+    width: 25px;
+    margin: 10px;
+  }
+
+  .container .right-side .box img.facebook{
+    width: 18.5px;
+  }
+
+  .thumb{
+    display: flex;
+    margin-top: -30px;
+    justify-content: center;
+  }
+
+  .thumb a:hover{
+    margin-top: -15px;
+    transition: 0.2s;
+  }
+
+  .thumb img{
+    width: 45px;
+    margin: 20px;
+  }
+}
